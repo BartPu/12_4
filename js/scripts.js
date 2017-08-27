@@ -4,7 +4,7 @@
         getJoke();
     });
     var paragraph = document.getElementById('joke');
-    paragraph.innerHTML = getJoke();
+    getJoke();
 
     function getJoke() {
         var xhr = new XMLHttpRequest();
@@ -15,4 +15,3 @@
         });
         xhr.send();
     }
-    var response = JSON.parse(xhr.response);
